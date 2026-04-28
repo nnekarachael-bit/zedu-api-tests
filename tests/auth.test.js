@@ -2,8 +2,8 @@ const axios = require('axios');
 const path = require('path');
 const result = require('dotenv').config({ path: require('path').resolve(process.cwd(), '.env') });
 
-// const BASE_URL = process.env.BASE_URL;
-const BASE_URL = "https://api.staging.zedu.chat/api/v1"
+const BASE_URL = process.env.BASE_URL;
+
 
 // Helper to generate unique email for each test
 function generateEmail() {
