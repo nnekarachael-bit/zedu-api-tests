@@ -1,6 +1,7 @@
 const axios = require('axios');
 const path = require('path');
-const result = require('dotenv').config({ path: require('path').resolve(process.cwd(), '.env') });
+require("dotenv").config({ path: path.resolve(process.cwd(), ".env") });
+
 
 
 const BASE_URL = process.env.BASE_URL;
