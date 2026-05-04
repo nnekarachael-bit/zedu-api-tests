@@ -9,7 +9,7 @@ This project contains automated API tests for the Zedu platform built using Java
 
 ## Setup Instructions
 1. Clone the repository:
-git clone <your-github-repo-link>
+git clone <https://github.com/nnekarachael-bit/zedu-api-tests>
 
 2. Navigate into the project folder:
 cd zedu-api-tests
