@@ -1,7 +1,17 @@
 # Zedu API Automation Tests
+![CI Status](https://github.com/nnekarachael-bit/zedu-api-tests/actions/workflows/ci.yml/badge.svg)
 
 ## Project Overview
-This project contains automated API tests for the Zedu platform built using JavaScript and Jest.
+This project contains automated API tests for the Zedu platform built using JavaScript and Jest. It includes a fully automated Continuous Integration (CI) pipeline to ensure code quality on every update.
+
+## 🚀 Continuous Integration (CI) Pipeline
+This project uses GitHub Actions for CI. The pipeline is configured to automatically:
+- Trigger on every `push` and `pull_request` to the `main` branch.
+- Set up the Node.js (v18.x) runtime environment.
+- Install dependencies automatically.
+- Execute the full Jest test suite against the API.
+- Fail the build immediately if any tests break.
+- Generate a JUnit XML test report as a downloadable artifact.
 
 ## Prerequisites
 - Node.js v18 or higher
@@ -9,32 +19,5 @@ This project contains automated API tests for the Zedu platform built using Java
 
 ## Setup Instructions
 1. Clone the repository:
-git clone <https://github.com/nnekarachael-bit/zedu-api-tests>
-
-2. Navigate into the project folder:
-cd zedu-api-tests
-
-3. Install dependencies:
-npm install
-
-4. Create your .env file:
-cp .env.example .env
-
-5. Fill in your credentials in the .env file:
-BASE_URL=https://api.staging.zedu.chat/api/v1
-EMAIL=your_email_here
-PASSWORD=your_password_here
-
-## How to Run Tests
-npm test
-
-## Test Files
-- **tests/auth.test.js** — 13 tests covering registration and login endpoints including positive, negative and edge cases
-- **tests/users.test.js** — 12 tests covering user endpoints including getting current user, specific user, all users and organisations
-
-## Environment Variables
-| Variable | Description |
-|---|---|
-| BASE_URL | Base URL for the Zedu staging API |
-| EMAIL | Registered email for testing |
-| PASSWORD | Password for the test account |
+```bash
+git clone [https://github.com/nnekarachael-bit/zedu-api-tests.git](https://github.com/nnekarachael-bit/zedu-api-tests.git)
